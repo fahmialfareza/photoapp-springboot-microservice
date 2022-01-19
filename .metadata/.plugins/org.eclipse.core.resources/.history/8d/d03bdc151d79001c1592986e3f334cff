@@ -1,0 +1,5 @@
+package com.fahmialfareza.photoapp.api.users.ui.controller;
+
+public class UsersController {
+
+}
