@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-PhotoAppDiscoveryServiceApplication<PhotoAppDiscoveryService>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.fahmialfareza.photoapp.discovery.PhotoAppDiscoveryServiceApplication",
+      "projectName": "PhotoAppDiscoveryService",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PhotoAppApiUsersApplication<PhotoAppApiUsers>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.fahmialfareza.photoapp.api.users.PhotoAppApiUsersApplication",
+      "projectName": "PhotoAppApiUsers",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PhotoAppApiAccountManagementApplication<PhotoAppApiAccountManagement>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.fahmialfareza.photoapp.api.account.PhotoAppApiAccountManagementApplication",
+      "projectName": "PhotoAppApiAccountManagement",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PhotoAppApiGatewayApplication<PhotoAppApiGateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.fahmialfareza.photoapp.api.gateway.PhotoAppApiGatewayApplication",
+      "projectName": "PhotoAppApiGateway",
+      "args": ""
+    }
+  ]
+}
