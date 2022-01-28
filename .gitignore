@@ -2,3 +2,5 @@
 .vscode
 .idea
 lib
+ELK/*
+!ELK/logstash-7.16.3/simple-config.conf

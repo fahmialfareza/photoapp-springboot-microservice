@@ -1,0 +1,416 @@
+2022-01-28 11:04:42.329  INFO 8639 --- [restartedMain] c.f.p.a.u.PhotoAppApiUsersApplication    : Starting PhotoAppApiUsersApplication using Java 17.0.2 on Macbook-Pro.local with PID 8639 (/Users/fahmialfareza/Code/Learning Code/Udemy/spring-boot/photoapp-springboot-ms/PhotoAppApiUsers/target/classes started by fahmialfareza in /Users/fahmialfareza/Code/Learning Code/Udemy/spring-boot/photoapp-springboot-ms/PhotoAppApiUsers)
+2022-01-28 11:04:42.331  INFO 8639 --- [restartedMain] c.f.p.a.u.PhotoAppApiUsersApplication    : No active profile set, falling back to default profiles: default
+2022-01-28 11:04:42.547  INFO 8639 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8012
+2022-01-28 11:04:42.553  INFO 8639 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2022-01-28 11:04:42.554  WARN 8639 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@7ca2123d uris = array<String>['http://localhost:8012'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2022-01-28 11:04:42.561  INFO 8639 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-28 11:04:42.565  INFO 8639 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-28 11:04:44.800  INFO 8639 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-28 11:04:44.887  INFO 8639 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2022-01-28 11:04:45.209  INFO 8639 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-01-28 11:04:45.228  INFO 8639 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-01-28 11:04:45.318  INFO 8639 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=22c2ac25-0c35-32bc-a3df-0dc22355e274
+2022-01-28 11:04:45.544  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:45.546  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:45.548  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:45.556  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:45.560  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:45.569  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:45.572  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:45.589  INFO 8639 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:04:46.157  INFO 8639 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-28 11:04:46.172  INFO 8639 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-28 11:04:46.174  INFO 8639 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 11:04:46.261  INFO 8639 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-28 11:04:46.262  INFO 8639 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3693 ms
+2022-01-28 11:04:46.481  INFO 8639 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-28 11:04:46.611  INFO 8639 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-28 11:04:46.621  INFO 8639 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:628a1821-238f-4fa2-9fb6-41fcd46263a2'
+2022-01-28 11:04:46.801  INFO 8639 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-28 11:04:46.865  INFO 8639 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-28 11:04:47.050  INFO 8639 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-28 11:04:47.198  INFO 8639 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-28 11:04:47.846  INFO 8639 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-28 11:04:47.855  INFO 8639 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-28 11:04:48.316  WARN 8639 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-28 11:04:48.496  INFO 8639 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-28 11:04:48.581  INFO 8639 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'albums-ws' URL not provided. Will try picking an instance via load-balancing.
+2022-01-28 11:04:48.770  WARN 8639 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: Pattern cannot be null or empty
+2022-01-28 11:04:48.776  WARN 8639 --- [restartedMain] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'rabbitConnectionFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:264) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:221) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:427) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1058) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:96) ~[spring-cloud-context-3.1.0.jar:3.1.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.2.jar:2.6.2]
+	at com.fahmialfareza.photoapp.api.users.PhotoAppApiUsersApplication.main(PhotoAppApiUsersApplication.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+
+2022-01-28 11:04:48.777  INFO 8639 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-28 11:04:48.778  INFO 8639 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-28 11:04:48.995  WARN 8639 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-01-28 11:04:48.996  INFO 8639 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-28 11:04:49.005  INFO 8639 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-28 11:04:49.008  INFO 8639 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-28 11:04:49.075  INFO 8639 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-28 11:04:49.127 ERROR 8639 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: Pattern cannot be null or empty
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.2.jar:2.6.2]
+	at com.fahmialfareza.photoapp.api.users.PhotoAppApiUsersApplication.main(PhotoAppApiUsersApplication.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: Pattern cannot be null or empty
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.14.jar:5.3.14]
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Pattern cannot be null or empty
+	at org.springframework.util.Assert.hasText(Assert.java:289) ~[spring-core-5.3.14.jar:5.3.14]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:113) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:98) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:86) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.setFilterProcessesUrl(AbstractAuthenticationProcessingFilter.java:361) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at com.fahmialfareza.photoapp.api.users.security.WebSecurity.getAuthenticationFilter(WebSecurity.java:41) ~[classes/:na]
+	at com.fahmialfareza.photoapp.api.users.security.WebSecurity.configure(WebSecurity.java:34) ~[classes/:na]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:217) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:315) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:93) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at com.fahmialfareza.photoapp.api.users.security.WebSecurity$$EnhancerBySpringCGLIB$$97ed2111.init(<generated>) ~[classes/:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:338) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:300) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:127) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.14.jar:5.3.14]
+	... 27 common frames omitted
+
+2022-01-28 11:28:21.772  INFO 10304 --- [restartedMain] c.f.p.a.u.PhotoAppApiUsersApplication    : Starting PhotoAppApiUsersApplication using Java 17.0.2 on Macbook-Pro.local with PID 10304 (/Users/fahmialfareza/Code/Learning/Udemy/spring-boot/photoapp-springboot-ms/PhotoAppApiUsers/target/classes started by fahmialfareza in /Users/fahmialfareza/Code/Learning/Udemy/spring-boot/photoapp-springboot-ms/PhotoAppApiUsers)
+2022-01-28 11:28:21.775  INFO 10304 --- [restartedMain] c.f.p.a.u.PhotoAppApiUsersApplication    : No active profile set, falling back to default profiles: default
+2022-01-28 11:28:22.152  INFO 10304 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8012
+2022-01-28 11:28:22.152  INFO 10304 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2022-01-28 11:28:22.152  WARN 10304 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@225864e5 uris = array<String>['http://localhost:8012'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused; nested exception is java.net.ConnectException: Connection refused
+2022-01-28 11:28:22.158  INFO 10304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-28 11:28:22.159  INFO 10304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-28 11:28:27.477  INFO 10304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-28 11:28:27.593  INFO 10304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interfaces.
+2022-01-28 11:28:28.218  INFO 10304 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-01-28 11:28:28.308  INFO 10304 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-01-28 11:28:28.453  INFO 10304 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=22c2ac25-0c35-32bc-a3df-0dc22355e274
+2022-01-28 11:28:28.870  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:28.877  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:28.880  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:28.904  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:28.910  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:28.924  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:28.931  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:28.960  INFO 10304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:28:30.475  INFO 10304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-28 11:28:30.492  INFO 10304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-28 11:28:30.493  INFO 10304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 11:28:30.754  INFO 10304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-28 11:28:30.754  INFO 10304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8591 ms
+2022-01-28 11:28:31.158  INFO 10304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-28 11:28:31.822  INFO 10304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-28 11:28:31.842  INFO 10304 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6d7037d7-d804-402a-b4c9-3da02d54bf4b'
+2022-01-28 11:28:32.718  INFO 10304 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-28 11:28:33.061  INFO 10304 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-28 11:28:33.831  INFO 10304 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-28 11:28:34.593  INFO 10304 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-28 11:28:37.008  INFO 10304 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-28 11:28:37.120  INFO 10304 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-28 11:28:40.339  WARN 10304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-28 11:28:41.288  INFO 10304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-28 11:28:41.757  INFO 10304 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'albums-ws' URL not provided. Will try picking an instance via load-balancing.
+2022-01-28 11:28:42.701  WARN 10304 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: Pattern cannot be null or empty
+2022-01-28 11:28:42.717  WARN 10304 --- [restartedMain] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'rabbitConnectionFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:264) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:221) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:427) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1058) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:96) ~[spring-cloud-context-3.1.0.jar:3.1.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.2.jar:2.6.2]
+	at com.fahmialfareza.photoapp.api.users.PhotoAppApiUsersApplication.main(PhotoAppApiUsersApplication.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+
+2022-01-28 11:28:42.726  INFO 10304 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-28 11:28:42.728  INFO 10304 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-28 11:28:43.036  WARN 10304 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-01-28 11:28:43.038  INFO 10304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-28 11:28:43.047  INFO 10304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-28 11:28:43.051  INFO 10304 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-28 11:28:43.132  INFO 10304 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-28 11:28:43.457 ERROR 10304 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: Pattern cannot be null or empty
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.14.jar:5.3.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.2.jar:2.6.2]
+	at com.fahmialfareza.photoapp.api.users.PhotoAppApiUsersApplication.main(PhotoAppApiUsersApplication.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.2.jar:2.6.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: Pattern cannot be null or empty
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.14.jar:5.3.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.14.jar:5.3.14]
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Pattern cannot be null or empty
+	at org.springframework.util.Assert.hasText(Assert.java:289) ~[spring-core-5.3.14.jar:5.3.14]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:113) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:98) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:86) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.util.matcher.AntPathRequestMatcher.<init>(AntPathRequestMatcher.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.setFilterProcessesUrl(AbstractAuthenticationProcessingFilter.java:361) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at com.fahmialfareza.photoapp.api.users.security.WebSecurity.getAuthenticationFilter(WebSecurity.java:41) ~[classes/:na]
+	at com.fahmialfareza.photoapp.api.users.security.WebSecurity.configure(WebSecurity.java:34) ~[classes/:na]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:217) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:315) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:93) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at com.fahmialfareza.photoapp.api.users.security.WebSecurity$$EnhancerBySpringCGLIB$$4521dd70.init(<generated>) ~[classes/:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:338) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:300) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:127) ~[spring-security-config-5.6.1.jar:5.6.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.14.jar:5.3.14]
+	... 27 common frames omitted
+
+2022-01-28 11:30:11.153  INFO 10398 --- [restartedMain] c.f.p.a.u.PhotoAppApiUsersApplication    : Starting PhotoAppApiUsersApplication using Java 17.0.2 on Macbook-Pro.local with PID 10398 (/Users/fahmialfareza/Code/Learning/Udemy/spring-boot/photoapp-springboot-ms/PhotoAppApiUsers/target/classes started by fahmialfareza in /Users/fahmialfareza/Code/Learning/Udemy/spring-boot/photoapp-springboot-ms/PhotoAppApiUsers)
+2022-01-28 11:30:11.155  INFO 10398 --- [restartedMain] c.f.p.a.u.PhotoAppApiUsersApplication    : No active profile set, falling back to default profiles: default
+2022-01-28 11:30:11.226  INFO 10398 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8012
+2022-01-28 11:30:11.226  INFO 10398 --- [restartedMain] o.s.b.context.config.ConfigDataLoader    : Located environment: name=users-ws, profiles=[default], label=null, version=null, state=null
+2022-01-28 11:30:11.228  INFO 10398 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-28 11:30:11.228  INFO 10398 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-28 11:30:13.256  INFO 10398 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-28 11:30:13.328  INFO 10398 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2022-01-28 11:30:13.640  INFO 10398 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-01-28 11:30:13.653  INFO 10398 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-01-28 11:30:13.776  INFO 10398 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=22c2ac25-0c35-32bc-a3df-0dc22355e274
+2022-01-28 11:30:14.058  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.061  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.062  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.070  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.073  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.082  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.087  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.111  INFO 10398 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-28 11:30:14.714  INFO 10398 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-28 11:30:14.722  INFO 10398 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-28 11:30:14.723  INFO 10398 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 11:30:15.104  INFO 10398 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-28 11:30:15.105  INFO 10398 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3876 ms
+2022-01-28 11:30:15.414  INFO 10398 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-28 11:30:19.055  INFO 10398 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-28 11:30:19.085  INFO 10398 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://u0l7tirfddcqxqs1:5f3klpRN3W3kjltwGmtJ@betjuzhytmlv3n7nblyk-mysql.services.clever-cloud.com:3306/betjuzhytmlv3n7nblyk'
+2022-01-28 11:30:19.313  INFO 10398 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-28 11:30:19.388  INFO 10398 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-28 11:30:19.593  INFO 10398 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-28 11:30:20.043  INFO 10398 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-28 11:30:21.820  INFO 10398 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-28 11:30:21.839  INFO 10398 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-28 11:30:22.494  WARN 10398 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-28 11:30:22.750  WARN 10398 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-01-28 11:30:23.062  INFO 10398 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'albums-ws' URL not provided. Will try picking an instance via load-balancing.
+2022-01-28 11:30:23.921  INFO 10398 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50f166f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@5895eea8, org.springframework.security.web.header.HeaderWriterFilter@133fa7fb, org.springframework.security.web.authentication.logout.LogoutFilter@5735e20b, com.fahmialfareza.photoapp.api.users.security.AuthenticationFilter@5b820e7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c617c69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57d89a3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@474b913b, org.springframework.security.web.session.SessionManagementFilter@2b4a2a5f, org.springframework.security.web.access.ExceptionTranslationFilter@48664dae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4327f86d]
+2022-01-28 11:30:25.271  INFO 10398 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'users-ws.springCloudBusInput' has 1 subscriber(s).
+2022-01-28 11:30:25.991  INFO 10398 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-01-28 11:30:26.159  WARN 10398 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-01-28 11:30:26.180  INFO 10398 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-01-28 11:30:26.486  INFO 10398 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2022-01-28 11:30:26.559  INFO 10398 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2022-01-28 11:30:26.598  INFO 10398 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2022-01-28 11:30:26.610  INFO 10398 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler _org.springframework.integration.errorLogger
+2022-01-28 11:30:26.650  INFO 10398 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-01-28 11:30:26.650  INFO 10398 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'users-ws.errorChannel' has 1 subscriber(s).
+2022-01-28 11:30:26.651  INFO 10398 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2022-01-28 11:30:26.659  INFO 10398 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2022-01-28 11:30:26.838  INFO 10398 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2022-01-28 11:30:26.839  INFO 10398 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2022-01-28 11:30:27.005  INFO 10398 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg, bound to: springCloudBus
+2022-01-28 11:30:27.007  INFO 10398 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [vulture.rmq.cloudamqp.com:5672]
+2022-01-28 11:30:27.761  INFO 10398 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7b375e95:0/SimpleConnection@1940cf2c [delegate=amqp://uyhmzzli@13.239.26.235:5672/uyhmzzli, localPort= 52746]
+2022-01-28 11:30:28.358  INFO 10398 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg.errors' has 1 subscriber(s).
+2022-01-28 11:30:28.359  INFO 10398 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg.errors' has 2 subscriber(s).
+2022-01-28 11:30:28.861  INFO 10398 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg'
+2022-01-28 11:30:28.887  INFO 10398 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52748 (http) with context path ''
+2022-01-28 11:30:28.891  INFO 10398 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52748
+2022-01-28 11:30:28.905  INFO 10398 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-28 11:30:29.117  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-28 11:30:29.131  INFO 10398 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 11:30:29.204  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-28 11:30:29.204  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-28 11:30:29.204  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-28 11:30:29.204  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-28 11:30:29.205  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-28 11:30:29.205  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-28 11:30:29.206  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-28 11:30:29.634  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-28 11:30:29.641  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-01-28 11:30:29.646  INFO 10398 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-28 11:30:29.657  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643344229657 with initial instances count: 2
+2022-01-28 11:30:29.660  INFO 10398 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2022-01-28 11:30:29.660  INFO 10398 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643344229660, current=UP, previous=STARTING]
+2022-01-28 11:30:29.661  INFO 10398 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:da28d368328483ea6440e6c694552439: registering service...
+2022-01-28 11:30:29.699  INFO 10398 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg.errors
+2022-01-28 11:30:29.710  INFO 10398 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:da28d368328483ea6440e6c694552439 - registration status: 204
+2022-01-28 11:30:29.740  INFO 10398 --- [restartedMain] c.f.p.a.u.PhotoAppApiUsersApplication    : Started PhotoAppApiUsersApplication in 19.987 seconds (JVM running for 22.093)
+2022-01-28 11:30:30.178  INFO 10398 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-28 11:30:30.178  INFO 10398 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-28 11:30:30.182  INFO 10398 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-01-28 11:35:29.284  INFO 10398 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 11:35:33.181  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.cloud.bus.event.RefreshListener      : Received remote refresh request.
+2022-01-28 11:35:33.261  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8012
+2022-01-28 11:35:33.457  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.b.context.config.ConfigDataLoader    : Located environment: name=users-ws, profiles=[default], label=null, version=null, state=null
+2022-01-28 11:35:33.488  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-28 11:35:34.510  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-01-28 11:35:37.535  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-01-28 11:35:37.559  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:da28d368328483ea6440e6c694552439 - deregister  status: 200
+2022-01-28 11:35:37.721  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-01-28 11:35:37.727  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-28 11:35:37.756  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-28 11:35:37.757  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 11:35:37.772  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-28 11:35:37.772  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-28 11:35:37.773  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-28 11:35:37.773  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-28 11:35:37.773  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-28 11:35:37.773  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-28 11:35:37.773  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-28 11:35:37.867  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-28 11:35:37.879  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-01-28 11:35:37.940  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-28 11:35:38.078  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643344538078 with initial instances count: 3
+2022-01-28 11:35:38.092  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2022-01-28 11:35:38.092  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643344538092, current=DOWN, previous=STARTING]
+2022-01-28 11:35:38.093  INFO 10398 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:fcfed5bc0b2d1e8c21352a6d097b7694: registering service...
+2022-01-28 11:35:38.095  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2022-01-28 11:35:38.095  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643344538095, current=UP, previous=DOWN]
+2022-01-28 11:35:38.096  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.cloud.bus.event.RefreshListener      : Keys refreshed []
+2022-01-28 11:35:38.106  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2022-01-28 11:35:38.129  INFO 10398 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:fcfed5bc0b2d1e8c21352a6d097b7694 - registration status: 204
+2022-01-28 11:35:38.130  INFO 10398 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:fcfed5bc0b2d1e8c21352a6d097b7694: registering service...
+2022-01-28 11:35:38.137  INFO 10398 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:fcfed5bc0b2d1e8c21352a6d097b7694 - registration status: 204
+2022-01-28 11:35:38.703  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'unknown.channel.name' has 1 subscriber(s).
+2022-01-28 11:35:38.732  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [vulture.rmq.cloudamqp.com:5672]
+2022-01-28 11:35:39.259  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory.publisher#419324de:0/SimpleConnection@4807d698 [delegate=amqp://uyhmzzli@13.239.26.235:5672/uyhmzzli, localPort= 53308]
+2022-01-28 11:35:39.262  INFO 10398 --- [springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (springCloudBus.anonymous.BPYhXvohQH6sKhfJ1E9IKg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-01-28 11:35:46.645 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] ---> GET http://albums-ws/users/35b259e9-38dd-4037-ac84-52436962dd4c/albums HTTP/1.1
+2022-01-28 11:35:46.645 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] ---> END HTTP (0-byte body)
+2022-01-28 11:35:47.057 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] <--- HTTP/1.1 200 (411ms)
+2022-01-28 11:35:47.057 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] connection: keep-alive
+2022-01-28 11:35:47.057 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] content-type: application/json
+2022-01-28 11:35:47.058 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] date: Fri, 28 Jan 2022 04:35:47 GMT
+2022-01-28 11:35:47.058 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] keep-alive: timeout=60
+2022-01-28 11:35:47.058 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] transfer-encoding: chunked
+2022-01-28 11:35:47.058 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] 
+2022-01-28 11:35:47.061 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] [{"albumId":"album1Id","userId":"35b259e9-38dd-4037-ac84-52436962dd4c","name":"album 1 name","description":"album 1 description"},{"albumId":"album2Id","userId":"35b259e9-38dd-4037-ac84-52436962dd4c","name":"album 2 name","description":"album 2 description"}]
+2022-01-28 11:35:47.061 DEBUG 10398 --- [http-nio-auto-1-exec-4] c.f.p.a.users.data.AlbumsServiceClient   : [AlbumsServiceClient#getAlbums] <--- END HTTP (259-byte body)
+2022-01-28 11:40:37.788  INFO 10398 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 11:45:37.798  INFO 10398 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 11:50:37.809  INFO 10398 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 11:55:37.788  INFO 10398 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
