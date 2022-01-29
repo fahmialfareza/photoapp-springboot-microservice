@@ -1,9 +1,0 @@
-.metadata
-.vscode
-.idea
-.mvn
-lib
-ELK/*
-!ELK/albums-logstash
-!ELK/users-logstash
-.DS_Store
