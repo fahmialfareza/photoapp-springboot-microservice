@@ -37,7 +37,14 @@ public class PhotoAppApiUsersApplication {
     }
 
     @Bean
-    Logger.Level feignLoggerLover() {
+    @Profile("production")
+    Logger.Level feignLoggerLevel() {
+        return Logger.Level.NONE;
+    }
+
+    @Bean
+    @Profile("~production")
+    Logger.Level feignDefaultLoggerLevel() {
         return Logger.Level.FULL;
     }
 
