@@ -99,3 +99,9 @@ docker build --tag=users-logstash --force-rm=true ./ELK/users-logstash
 ```zsh
 docker run -d --name users-microservice-logstash -v {DIRECTORY}:/api-logs users-logstash
 ```
+
+## Production Mode
+
+```zsh
+docker run -d -e "spring.profiles.active=production" {IMAGE_MICROSERVICE_NAME}
+```
