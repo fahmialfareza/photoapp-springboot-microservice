@@ -3992,3 +3992,22 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2022-01-28 12:50:52.368  INFO 15397 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
 2022-01-28 12:50:52.368  INFO 15397 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
 2022-01-28 12:50:52.379  INFO 15397 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-28 12:53:51.523  INFO 15397 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 12:56:44.863  INFO 15397 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2022-01-28 12:56:44.866  INFO 15397 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643349404866, current=DOWN, previous=UP]
+2022-01-28 12:56:44.869  INFO 15397 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:cbab5e2e8cbf27f83caa27bd1d177f7d: registering service...
+2022-01-28 12:56:44.882  INFO 15397 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:cbab5e2e8cbf27f83caa27bd1d177f7d - registration status: 204
+2022-01-28 12:56:45.026  INFO 15397 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-01-28 12:56:45.913  INFO 15397 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-01-28 12:56:45.913  INFO 15397 --- [SpringApplicationShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.eLG_1n6NQ2iC0-gZqjrM4Q'
+2022-01-28 12:56:45.915  INFO 15397 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'users-ws.springCloudBus.anonymous.eLG_1n6NQ2iC0-gZqjrM4Q.errors' has 1 subscriber(s).
+2022-01-28 12:56:45.919  INFO 15397 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-01-28 12:56:45.919  INFO 15397 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'users-ws.errorChannel' has 0 subscriber(s).
+2022-01-28 12:56:45.919  INFO 15397 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2022-01-28 12:56:46.187  INFO 15397 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-28 12:56:46.190  INFO 15397 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-28 12:56:47.116  INFO 15397 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-28 12:56:47.117  INFO 15397 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-01-28 12:56:50.130  INFO 15397 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-01-28 12:56:50.142  INFO 15397 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:cbab5e2e8cbf27f83caa27bd1d177f7d - deregister  status: 200
+2022-01-28 12:56:50.187  INFO 15397 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

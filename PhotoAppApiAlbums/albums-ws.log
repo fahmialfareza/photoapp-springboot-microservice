@@ -3448,3 +3448,286 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+2022-01-28 12:53:52.046  INFO 10315 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-28 12:53:56.148  WARN 10315 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:53:56.148  WARN 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:53:56.148  INFO 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-01-28 12:53:56.149 ERROR 10315 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:54:26.163  WARN 10315 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:54:26.164 ERROR 10315 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:54:26.165  WARN 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:54:26.165  INFO 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-01-28 12:54:56.176  WARN 10315 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:54:56.177  WARN 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:54:56.177 ERROR 10315 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:54:56.177  INFO 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-01-28 12:55:26.189  WARN 10315 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:55:26.189  WARN 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:55:26.189  INFO 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-01-28 12:55:26.190 ERROR 10315 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:55:56.218  WARN 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:55:56.219  INFO 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-01-28 12:55:56.220  WARN 10315 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:55:56.221 ERROR 10315 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:56:26.234  WARN 10315 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:56:26.235 ERROR 10315 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:56:26.236  WARN 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:56:26.236  INFO 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-01-28 12:56:56.253  WARN 10315 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:56:56.254 ERROR 10315 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:56:56.254  WARN 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:56:56.254  INFO 10315 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-01-28 12:57:01.025  INFO 10315 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ALBUMS-WS with eureka with status DOWN
+2022-01-28 12:57:01.025  INFO 10315 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643349421025, current=DOWN, previous=UP]
+2022-01-28 12:57:01.026  INFO 10315 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee: registering service...
+2022-01-28 12:57:01.051  WARN 10315 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure with status code 401; retrying on another server if available
+2022-01-28 12:57:01.052  WARN 10315 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:57:01.053  WARN 10315 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-28 12:57:01.088  INFO 10315 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-01-28 12:57:04.100  INFO 10315 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-01-28 12:57:04.106  INFO 10315 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:61ed798c6466583526564fdd4479b2ee - deregister  status: 401
+2022-01-28 12:57:04.156  INFO 10315 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
